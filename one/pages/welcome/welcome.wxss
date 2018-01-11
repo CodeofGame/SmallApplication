@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.user-averator{
+  width: 200rpx;
+  height:200rpx;
+  margin-top:160rpx;
+  border-radius: 50%;
+}
+
+.user-name{
+  font-size: 32rpx;
+  font-weight:bold;
+  font-family: "MicroSoft YaHei";
+  margin:100rpx auto;
+}
+
+.moto-container{
+  width: 220rpx;
+  height: 80rpx;
+  border:2rpx solid #405f80;
+  text-align: center; 
+}
+.moto-container text{
+  color: #405f80;
+  font-size:23rpx;
+  line-height:80rpx;
+}
+
+page{
+  height: 100%;
+  background-color: #b3d4db;
+}
