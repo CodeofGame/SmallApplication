@@ -1,0 +1,91 @@
+swiper
+{
+  width: 100%;
+  height: 600rpx;
+}
+
+swiper image
+{
+  width: 100%;
+  height: 100%;
+
+}
+
+/*容器样式*/
+.posts-container
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top:20rpx;
+  margin-bottom: 40rpx;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5rpx;
+}
+
+.post-author-title
+{
+  margin: 10rpx 0 20rpx 10rpx;
+}
+.post-author-title image
+{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align:middle;
+}
+
+.post-author-title text
+{
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  vertical-align: middle;
+  font-size: 26rpx;
+}
+.posts-title
+{
+  font-size:34rpx;
+  font-weight: bold;
+  color:#333;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.posts-image
+{
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: 400rpx;
+}
+
+.posts-content
+{
+  color: #666;
+  margin: 10rpx 0 17rpx 10rpx;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  line-height: 30rpx;
+}
+/*文章收藏页*/
+.post-like
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  margin-left: 16rpx;
+}
+
+.post-like image
+{
+  width: 16px;
+  height: 16px;
+  margin:0 8rpx 0 8rpx;
+  vertical-align: middle;
+}
+
+.posts-like text
+{
+  vertical-align: middle;
+  margin-right: 20px;
+}
