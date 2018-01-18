@@ -1,7 +1,7 @@
 <view class='container'>
   <image class='user-averator' src='/images/3.jpg'></image>
   <text class='user-name'>下厨房</text>
-  <view class='moto-container'>
+  <view class='moto-container' bindtap="onTap">
     <text >开启你的美食之旅吧</text>
   </view>
 </view>

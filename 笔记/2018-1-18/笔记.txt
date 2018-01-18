@@ -1,0 +1,54 @@
+数据绑定
+两个花括号可以连用 {{}} {{}}
+
+wxml 控制标签的隐藏和显示
+
+wx:if="{{false}}"//不显示
+wx:if="{{true}}"  <=> wx:if="dasdasda"
+里边填任意值都代表true，则控件显示
+
+｛｛中间可以运算｝｝
+{{a+b+c}}
+
+解决组件重复的问题
+可以使用view组件 将要循环的组件包裹起来
+
+wx:for="{{一个数组的引用，从this.setData()获取}}"
+wx:for-item="item"
+上面的代码就好比javascript的for of循环
+for(var item of array)
+{//操作item
+}
+
+.setData()方法 这里需要主要
+只接受一个对象，如果要传数组要包装一层
+例如
+var data={key:array};
+this.setData(data)
+
+wx:for="数据源"
+wx:for-item="循环体" 如果不设置默认就是item
+wx:for-index="索引值"
+
+小程序的事件机制（冒泡与非冒泡）
+事件 tap事件 
+使用时在tap之前加上bind binftap="a function name"
+
+Page({
+functionName:function(){
+}
+})
+
+页面生命周期
+页面导航方法
+wx.navigateTo
+将进入 onHide方法
+wx.redireactTo
+将进入onUnload
+页面的生命周期函数
+
+事件冒泡
+
+
+
+

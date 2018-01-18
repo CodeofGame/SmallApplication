@@ -1,5 +1,5 @@
 <view>
-  <swiper indicator-dots="true" circular="true" indicator-color="rgba(23,23,23,.3)">
+  <swiper indicator-dots="{{false}}" circular="true" indicator-color="rgba(23,23,23,.3)">
     <swiper-item>
       <image src="/images/1.jpg"></image>
     </swiper-item>
@@ -13,56 +13,22 @@
       <image src="/images/4.jpg"></image>
     </swiper-item>
   </swiper>
-  <view class='posts-container'>
-    <view class='post-author-title'>
-      <image src='/images/Avatar/1.jpg'></image>
-      <text>{{test}}</text>
-    </view>
-    <text class='posts-title'>麻辣龙利鱼</text>
-    <image class='posts-image' src='/images/1.jpg'></image>
-    <text class='posts-content'>把腌好的龙利鱼中的生姜块、大葱挑出来扔掉，再加入淀粉抓均匀，让每块都均匀的裹上淀粉。
-    </text>
-    <view class='post-like'>
-      <image src='/images/favorite.png'></image>
-      <text>22</text>
-      <image src='/images/comments.png'></image>
-      <text>66</text>
-    </view>
-  </view>
-  <view class='posts-container'>
-    <view class='post-author-title'>
-      <image src='/images/Avatar/2.jpg'></image>
-      <text>饭饭烘焙</text>
-    </view>
-    <text class='posts-title'>红豆酥皮饼</text>
-    <image class='posts-image' src='/images/2.jpg'></image>
-                <text class='posts-content'>酥皮红豆饼以其酥皮多层，酥融可口而出名。才出炉的红豆饼就像施了魔法般美味，一个完全不够。冬天吃红豆酥皮饼，夏天可以把红豆替换成绿豆，清热解毒。
-
-            红豆提前泡一晚，用高压锅或者小炖锅煮烂，沥干水分，放入锅中，加适量白糖，用小火炒至一部分变成泥状，关火。
-    </text>
-    <view class='post-like'>
-      <image src='/images/favorite.png'></image>
-      <text>22</text>
-      <image src='/images/comments.png'></image>
-      <text>66</text>
-    </view>
-  </view>
-  <view class='posts-container'>
-    <view class='post-author-title'>
-      <image src='/images/Avatar/3.jpg'></image>
-      <text>饭饭烘焙</text>
-    </view>
-    <text class='posts-title'>脏脏包/原谅包/白富美干净包</text>
-    <image class='posts-image' src='/images/3.jpg'></image>
-                <text class='posts-content'>酥皮红豆饼以其酥皮多层，酥融可口而出名。才出炉的红豆饼就像施了魔法般美味，一个完全不够。冬天吃红豆酥皮饼，夏天可以把红豆替换成绿豆，清热解毒。
-
-            红豆提前泡一晚，用高压锅或者小炖锅煮烂，沥干水分，放入锅中，加适量白糖，用小火炒至一部分变成泥状，关火。
-    </text>
-    <view class='post-like'>
-      <image src='/images/favorite.png'></image>
-      <text>22</text>
-      <image src='/images/comments.png'></image>
-      <text>66</text>
+  <view wx:for="{{postkey}}" wx:for-item="item" wx:for-index="ids">
+    <view class='posts-container'>
+      <view class='post-author-title'>
+        <image src='{{item.titleImage}}'></image>
+        <text>{{item.author}}</text>
+      </view>
+      <text class='posts-title'>{{item.title}}{{ids}}</text>
+      <image class='posts-image' src="{{item.image}}"></image>
+      <text class='posts-content'>{{item.content}}
+      </text>
+      <view class='post-like'>
+        <image src='/images/favorite.png'></image>
+        <text>{{item.favourite}}</text>
+        <image src='/images/comments.png'></image>
+        <text>{{item.comments}}</text>
+      </view>
     </view>
   </view>
 </view>

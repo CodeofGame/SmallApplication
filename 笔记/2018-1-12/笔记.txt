@@ -1,0 +1,13 @@
+﻿app.json
+pages 数组的第一个地址是启动地址
+
+每新建一个页面都需要注册
+
+轮播图组件
+swiper组件 轮播，滑块组件
+<swiper>
+<swiper-item><swiper-item>
+</swiper>
+swiper-item只能放在swiper中，且宽高自动设置为100%,所以设置高度要设置swiper的高度，他们充当容器角色。
+
+可以设
