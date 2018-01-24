@@ -1,0 +1,18 @@
+<template name="postitem">
+   <view class='posts-container'>
+      <view class='post-author-title'>
+        <image src='{{item.titleImage}}'></image>
+        <text>{{item.author}}</text>
+      </view>
+      <text class='posts-title'>{{item.title}}{{ids}}</text>
+      <image class='posts-image' src="{{item.image}}"></image>
+      <text class='posts-content'>{{item.content}}
+      </text>
+      <view class='post-like'>
+        <image src='/images/favorite.png'></image>
+        <text>{{item.favourite}}</text>
+        <image src='/images/comments.png'></image>
+        <text>{{item.comments}}</text>
+      </view>
+    </view>
+</template>

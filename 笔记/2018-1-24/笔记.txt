@@ -1,0 +1,46 @@
+将数据放在一个单独的文件中
+
+使用module.exports={}将文件中的对象导出
+
+用require引入文件，require("路径") 这里只能用相对路径，不能用绝对路径
+
+template模板的使用 体现编程思想 模板化的技术
+
+模板也是wxml与wxss的组合与vue的组件化技术是不一样的
+这是一个代码片段
+
+1、创建template
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+
+2、引入template
+<import src="相对路径和绝对路径都可以" />
+
+3、使用template
+<template is="template的名称" data="{{数据源}}" />
+<template is="msgItem" data="{{一个点对象}}" />
+
+将template也如template所对应的wxss文件中，方便复用
+
+写完的wxss文件，可以使用@import "wxss的相对路径"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
